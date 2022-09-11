@@ -1,0 +1,46 @@
+Examen parcial recuperatorio - Gestión de Software II 2º2ªAF - Primer cuatrimestre
+
+Una empresa es industrial y comercial; es decir que compra algunos artículos
+para revender, y además compra materias primas, las transforma, y vende el
+producto elaborado (ej: compra sillas y las revende; pero también compra madera,
+clavos, tornillos, etc., y con eso fabrica las mesas que vende).
+
+El precio de venta para productos comerciales, es el precio de costo, más un 20%.
+
+El precio de venta para productos industriales, es el precio de costo más un 25%.
+
+La estructura de costos de la empresa es la siguiente:
+
+- Los productos comerciales (los que revende sin transformar) tienen un nombre y
+un precio de costo determinado por el proveedor.
+
+- Los productos industriales tienen:
+    a. Un nombre
+    b. Un costo de materia prima.
+    c. Una lista de costos de mano de obra, cuyos valores están expresados en
+ horas. Si el valor es positivo, se trata de mano de obra no-calificada (que se
+paga $1000 por hora), y si es negativo, de mano de obra calificada (que se paga
+$1200 por hora). 
+
+Por ejemplo:
+Para fabricar una mesa, se requiere, en materia prima, $3200.
+Para esa misma mesa, se requieren dos horas de trabajo de una maestra caprintera (calificada),
+10 horas de un peón carpintero (no-calificado), y 1 hora de control de calidad (no calificado).
+La lista de mano de obra tendría entonces los valores [-2, 10, 1].
+
+El costo total de la materia prima sería: 3200
+El costo total de la mano de obra sería: (2 * 1200) + (10 * 1000) + (1 * 1000) = 13400
+Por lo tanto, el costo total de la mesa sería de 3200 + 13400 = 16600
+
+Y el precio de venta sería: 16600 + (16600 * 25 / 100) = 20750
+
+Se solicita:
+
+1. Implementar la clase ProductoIndustrial, de manera que la aplicación funcione.
+Esta clase debe tener, al menos: 
+- Método iniciador
+- Método que retorne el precio de costo
+- Método que retorne el precio de venta
+(Copiar en la hoja todo el contenido del archivo).
+2. Completar el método producto_mas_barato del archivo listaPrecios.py (Copiar
+en la hoja solamente este método).

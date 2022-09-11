@@ -1,0 +1,43 @@
+.contenedor {
+    margin: 10vh 10vw 10 vh 10vw;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.contenedor h2 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contenedor h1 {
+    color: white;
+    width: 100%;
+    /*border:1px solid red*/
+    text-align: center;
+    margin: 0;
+    font-size: 4vw;
+    line-height: 600px;
+}
+
+.bloque .contenedor.contenido {
+    margin: 10vh 10vw 10vh 10vw;
+}
+
+.bloque p {
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.bloque.parallax {
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parallax.imagen-1 {
+    background-image: url("../img/mini.jpg");
+    /*doble punto al comienzo para acceder a la imagen ya que está en otro directorio que no está en la raiz */
+}

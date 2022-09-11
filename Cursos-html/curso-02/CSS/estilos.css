@@ -1,0 +1,125 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    clear: both;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 0;
+    border-top: 2px solid #999999;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #254e58;
+}
+
+header.main {
+    background-color: #112d32;
+    color: white;
+    padding: 10px;
+}
+
+article {
+    background: #88bdbc;
+    font-weight: bolder;
+    color: black;
+    border: 0px solid #999999;
+    box-shadow: 3px 3px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+article footer {
+    text-align: right;
+}
+
+#seccion {
+    float: left;
+    width: 65%;
+    margin: 30px;
+    display: block;
+}
+
+#columna {
+    float: left;
+    width: 20%;
+    margin: 20px 0px;
+    padding: 20px;
+    background: #6e6658;
+    color: white;
+}
+
+#pie {
+    clear: both;
+    /*posición: fixed*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    border-top: 2px soliud #999999;
+}
+
+time {
+    color: green;
+}
+
+figcaption {
+    font: italic 14vh verdana, sans-serif;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+/*
+*Pseudo clase:hover; se activa cuando se
+*pone el cursor sobre (:hover) el elemento en este caso es <a>
+*/
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.active {
+    background-color: #112d32;
+}
+
+#logo {
+    width: 3%;
+}
+
+#titulo {
+    font-size: 3vw;
+    width: 100%;
+}
+
+.cabecera {
+    display: inline;
+}
+
+/*
+*Elemento <footer> que tiene como atributo class con el valor "page"    
+*/
+footer[class="page"] {
+    background-color: #112d32;
+    text-align: center;
+}

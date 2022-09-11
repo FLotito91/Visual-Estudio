@@ -1,0 +1,36 @@
+@media screen and (max-width:80px) {
+    #titulo {
+        text-align: center;
+    }
+}
+
+/*Use media query para aderir un breakpoint a los 800px*/
+@media screen and(max-width: 800px) {
+    #seccion {
+        width: 96%;
+        /*El width es 100% pero el viewport es 800 o mas pequeño*/
+        margin: 2%;
+        padding: 0;
+    }
+
+}
+
+/*Use media query para aderir un breakpoint a los 800px*/
+@media screen and (max-width:800px) {
+    div.form {
+        width: 96%;
+        /*El width es 100% pero el viewport es 800 o mas pequeño*/
+        MARGIN: 2%;
+        padding: 2%;
+    }
+}
+
+/*Use media query para aderir un breakpoint a los 800px*/
+@media screen and(max-width: 800px) {
+    #columna {
+        width: 96%;
+        /*El width es 100% pero el viewport es 800 o mas pequeño*/
+        padding: 0 0% 0 0%;
+        margin: 0 2% 0 2%;
+    }
+}

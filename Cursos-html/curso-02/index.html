@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--Atributo lang es para especifiar el idioma "es" es para español -->
+<htmla lang="es">
+
+    <head>
+        <!-- El título aparece en el título de la pestaña-->
+        <title> Mi página web</title>
+        <meta charset="utf-8" />
+        <!-- Añadir la siguiente etiqueta meta par soportar un diseño responsivo-->
+        <meta name="viewport" content="widht=device=widht, initial-scale=1.0">
+        <!--Esta es una hoja de estilos importada desde un sitio web externo que contiene varios estilos-->
+        <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajaxlbs.font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Referecia a esrtilos externos (archivos CSS de estulos que usamos en esta página)-->
+        <link rel="stylesheet" href="./CSS/estilos.css">
+        <link rel="stylesheet" href="./CSS/formulario.css">
+        <link rel="stylesheet" href="./CSS/parallax.css">
+        <link rel="stylesheet" href="./CSS/responsivo.css">
+    </head>
+
+    <body>
+        <!-- Creamos un banner para el título de la página-->
+        <nav>
+            <header class="main">
+                <img class="cabecera" id="logo" />
+                <div class="cabecera" id="titulo">Mi página web</div>
+            </header>
+            <!--Menu de la págiina en el atributo href deberia ir el id del elemento
+al que vamos a ser redireccionados dentro de la página cuando demos click
+en esa opción del menu-->
+            <ul>
+                <li><a class= active href="#">Principal</a></li>
+                <li><a href="#"> Contacto</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </nav>
+        <section>
+            <!--Div con efecto especial para una imagen en la portada-->
+            <div class="bloque parallax imagen-1">
+                <div class="contenedor">
+                    <h1> HTML y CSS</h1>
+                </div>
+            </div>
+            <!--div normal con texto de bienida-->
+            <div class="bloque">
+                <div class="contenedor contenido">
+                    <h2>lorem imsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, hic libero sit ea adipisci est
+                        rerum illum illo itaque nihil minus ipsa porro quaerat alias quibusdam, aut optio?
+                        Exercitationem, tempore!</p>
+                </div>
+            </div>
+        </section>
+        <section id="seccion">
+            <!--Escribimos un artículo aquí-->
+            <article>
+                <header>
+                    <!--HGROUP se usa para agrupar elementos de tipo H (h1,h2,h3 etc)-->
+                    <hgroup>
+                        <h1>Prepocesador HTML - Pug Lag</h1>
+                        <h2>Ahora puedes crear páginas web en minutos con Pug Lang antes llamado Jade</h2>
+                    </hgroup>
+                    <!--Esta solo es una fecha se usa una etiqueta para que se le pueda dar un trato especial (como una fecha) por el navegador-->
+                    <time datetime="2019-08-06" pubdate> Publicado 06/08/2019</time>
+                </header>
+                <footer>
+                    <p>comentarios(0)</p>
+                    <!-- Con esta etiqueta se especifican los datos una dirección -->
+                    <address>
+                        2nd Avenue <br>
+                        +123245675 <br>
+                        <a href="#">www.mypersonalsiite.com<i class="fa fa-object-group"></i></a>
+                    </address>
+                </footer>
+            </article>
+            <!--Otro artículo-->
+            <article>
+                <header>
+                    <hgroup>
+                        <h1>HTML y CSS</h1>
+                        <h2>Entendiendo el modelo de caja tradicional</h2>
+                    </hgroup>
+                    <time datetime="2019-08-06" pubdate> Publicado 06/08/2019</time>
+                </header>
+                <!--Agregamos un pie de página -->
+                <footer>
+                    <address>
+                        <p>Comentarios(0)</p>
+                        <a>address here <i></i></a>
+                    </address>
+                </footer>
+            </article>
+        </section>
+        <!--Elemnento ASIDE para poner un contenido a un lado de otros elementos-->
+        <aside id="columna">
+            <div>Ver mas...</div>
+        </aside>
+        <div class="form" style="font-size: 2vw">
+            <!--Formulario para captura de datos, realiza una petición de tipo POST
+al endpoint /action_page.php-->
+            <!--realiza una validación de los elementos HTML internos
+en la funcion de validateForm() con el atributo onsubmit()-->
+            <form name="miForm" action="/action_page.php" onsubmit="return validateForm()" >
+                <header style="text-align:center">
+                    <h1>Suscríbete</h1>
+                </header>
+                <!--El atributo pattern se usa para realizar validaciones por medio de Expresiones Regulares-->
+                <label for="fnombre">Nombre</label>
+                <input type="text" id="fnombre" name="nombre" placeholder="Tu nombre" pattern="[A-Za-z]+$">
+
+                <!--El atributo placeholder se usa para hacer una sugerencia de lo que debe ingresar el usuario-->
+                <label for="correo"> Correo electrónico</label>
+                <input type="text" id="correo" name="correo" placeholder="Tu correo electrónico"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\[a-z]{2,}$" />
+
+                <!--Lista de opciones-->
+                <label for="ocupacion"></label>
+                <select name="ocupacion" id="ocupacion">
+                    <option value="desarrollador"> Desarrollador</option>
+                    <option value="ingeniero">Ingeniero</option>
+                    <option value="diseñador">Diseñador</option>
+                </select>
+                <!--Boton que envía la información del formulario-->
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <footer id="pie" class="page">Todos los derechos reservados &copy;2019</footer>
+        <!-- Script embebido en la página (valida que los datos del formulario no sean vacíos). Se recomienda en archivo externo-->
+        <script>
+        function validateForm(){
+            /*Se asigna un elemento del documento html a una variable*/
+            var nombre =document.forms["miForm"]["nombre"].value;
+            /*Se valida el valor de esa varaiable donde se asignó el elemento no esté vacío*/
+            if (nombre=="")
+            /* la función alert() de javascript muestra un mensaje de ventana emergente en el navegador*/
+            alert("Nombre debe ser completados")
+            return false;
+            
+            
+        }
+        </script>
+    </body>
+    </html>
