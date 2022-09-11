@@ -1,0 +1,13 @@
+h2 {
+    color: rgb(0, 255, 42);
+}
+
+.titulo-principal {
+    color: red;
+}
+
+.imagen-centrada {
+    margin: auto;
+    display: block;
+    border-radius: 12px;
+}

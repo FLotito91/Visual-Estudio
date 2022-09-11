@@ -1,5 +1,7 @@
 body {
     font-family: "Pacifico";
+    margin: 0;
+        padding: 0;
 }
 
 p {
@@ -45,12 +47,20 @@ h2 {
 
 a {
     color: white;
-    text-decoration: none;
     font-size: 14px;
     background: #5cb8ff;
     padding: 20px 30px 20px 30px;
+    border-radius: 50%;
 }
 
 header {
-    background: url(html/Complementos/imagen-personal.webp);
+    background: url(../Complementos/fondo-pagina.jpg);
+        height: 100vh;
+        background-size: cover;
+    }
+    
+    .contenedor {
+        max-width: 1280;
+        width: 90%;
+        margin: auto;
 }

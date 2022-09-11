@@ -38,6 +38,7 @@ height: 16px;
     float: left;
 }
 
+
 @media screen and (max-width: 400px) {
     .tamaño-fuente-contacto {
         font-size: auto;
