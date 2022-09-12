@@ -4,10 +4,6 @@ body {
         padding: 0;
 }
 
-p {
-    font-size: 20px;
-}
-
 li {
     list-style: none;
     margin-right: 25px;
@@ -45,7 +41,7 @@ h2 {
     margin-bottom: 40px;
 }
 
-a {
+.primer-ver-mis-trabajos {
     color: white;
     font-size: 14px;
     background: #5cb8ff;
@@ -63,4 +59,75 @@ header {
         max-width: 1280;
         width: 90%;
         margin: auto;
+}
+/*Estilo sección sobre mi*/
+h3 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+.contenedor-sobremi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-parrafo-y-boton {
+    width: 50%;
+}
+
+.contenedor-parrafo-y-boton p {
+    font-size: 18px;
+}
+
+.contenedor-parrafo-y-boton a {
+    margin-top: 20px;
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    background: #5cb8ff;
+    padding: 20px 30px 20px 30px;
+    border-radius: 50%;
+}
+
+/* Sección servicios*/
+.servicio p {
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.contenedor-div-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 38px;
+
+}
+
+.servicio {
+    width: 25%;
+    padding: 50px 38px 50px 38px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.servicio h4 {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
+
+.violeta {
+    background: #5055df;
+}
+
+.celeste {
+    background: #40a8fa;
+}
+
+.servicio img {
+    float: right;
 }
