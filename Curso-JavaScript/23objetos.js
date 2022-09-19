@@ -3,6 +3,13 @@ let persona = {
     apellido: "Perez",
     email: "jperez@mail.com",
     edad: 31,
+    idioma: "es_mx",
+    get lang(){
+        return this.idioma.toUpperCase();
+    },
+    set lang(lang){
+        this.idioma = lang.toUpperCase()
+    },
     get nombreCompleto(){
         return this.nombre + " " + this.apellido
     }
@@ -53,4 +60,11 @@ console.log(personaArray);
 //En string
 let personaString = JSON.stringify(persona);
 console.log(personaString);
-console.log(personaString)
+console.log(personaString);
+
+
+console.log(persona.lang);
+persona.lang = "en";
+console.log(persona.idioma);
+console.log(persona.lang);//se almacena de dif formas.-
+
