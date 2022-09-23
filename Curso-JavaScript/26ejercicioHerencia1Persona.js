@@ -1,5 +1,5 @@
 class Persona {
-    static idPersona= 0;
+    static _idPersona= 0;
     constructor(nombre,apellido,edad){
         this._nombre = nombre;
         this._apellido=apellido;
@@ -7,7 +7,7 @@ class Persona {
         this._idPersona = ++Persona.idPersona;
     }
     get idPersona(){
-        Persona.idPersona = ++idPersona;
+        Persona.idPersona = ++_idPersona;
     }
     get nombre(){
         return this._nombre
